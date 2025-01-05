@@ -6,5 +6,11 @@ def ip_address(address):
     return new_address
 
 
-ipaddress = ip_address("1.1.2.3")
-print(ipaddress)
+def take_input():
+    name = input("Enter your IP Address: ")
+    return name
+
+
+address = take_input()
+new_address = ip_address(address)
+print(new_address)

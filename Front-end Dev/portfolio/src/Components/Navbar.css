@@ -1,0 +1,41 @@
+/* Navbar.css */
+.navbar {
+    background: skyblue;
+    color: white;
+    padding: 15px 20px;
+    position: sticky;  /* Keeps navbar at the top */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;  /* Ensures navbar is above all elements */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px; /* Define fixed height */
+  }
+  
+  .navbar-container {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Ensures the menu stays centered */
+    align-items: center;
+    position: relative; /* For the logo positioning */
+  }
+  
+
+  .logo {
+    position: absolute;
+    left: 20px; /* Adjust this to move the logo left or right */
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+  }

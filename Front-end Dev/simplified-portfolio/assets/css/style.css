@@ -1,0 +1,88 @@
+/* font style */
+
+/* General Styles */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Content Container (Sidebar + Main Content) */
+.content-container {
+    display: flex;
+    flex: 1;
+    margin-top: 56px; /* Adjust for fixed navbar height */
+    height: calc(100vh - 56px);
+    overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    height: 100%;
+    overflow-y: auto;
+    position: fixed;
+    left: 0;
+    top: 56px; /* Adjust for fixed navbar */
+    bottom: 0;
+}
+
+.sidebar h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.sidebar a:hover {
+    background-color: #495057;
+}
+
+/* Main Content */
+.content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 250px; /* Adjust for sidebar width */
+    overflow-y: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+    .content {
+        margin-left: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .content {
+        margin-left: 0;
+    }
+}

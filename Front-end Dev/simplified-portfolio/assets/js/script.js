@@ -4,8 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Function to load content dynamically
 function loadContent(page, section) {
-    console.log("Loading content:", page, "Section:", section); // Debugging output
-
     fetch(page)
         .then(response => response.text())
         .then(data => {
@@ -15,6 +13,7 @@ function loadContent(page, section) {
         .catch(error => console.error("Error loading page:", error));
 }
 
+
 // Function to update the sidebar dynamically based on the selected section
 function updateSidebar(section) {
     console.log("Updating sidebar for:", section); // Debugging
@@ -23,15 +22,13 @@ function updateSidebar(section) {
     let menuContent = "";
     
     if (section === "about") {
+
+    } else if (section === "tech archive") {
         menuContent = `
-            <a href="#" onclick="loadContent('bio.html')">Biography</a>
-            <a href="#" onclick="loadContent('experience.html')">Experience</a>
-        `;
-    } else if (section === "projects") {
-        menuContent = `
-            <a href="#" onclick="loadContent('web-projects.html')">Web Projects</a>
-            <a href="#" onclick="loadContent('automation.html')">Automation Scripts</a>
-            <a href="#" onclick="loadContent('cloud.html')">Cloud Deployments</a>
+            <h5 class="label"> Proof of Concept (POC) </h5>
+            <h6 class="sublabel"> Cloud Computing </h6>
+            <a class ="component" href="#" onclick="loadContent('pages/aws.html', 'tech archive')">Amazon Web Services (AWS)</a>
+            
         `;
     } else if (section === "contact") {
         menuContent = `

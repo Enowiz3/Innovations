@@ -1,0 +1,203 @@
+/* ✅ Global Font Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* ✅ Headers with Poppins for a premium, bold look */
+h1, h2, h3, h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #222;
+}
+
+/* ✅ Paragraphs & General Text with Roboto for clean readability */
+p, a, ul, li {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Main Layout */
+.content-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ✅ Sidebar Background Color */
+.sidebar {
+  width: 250px;
+  background: #2C3E50;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  min-height: 100vh;
+  color: white; /* Ensure text is readable */
+}
+
+/* When Sidebar is Empty */
+.empty-sidebar {
+  min-height: 100vh;
+}
+
+/* Sidebar Headers */
+.sidebar h4, .sidebar h5 {
+  font-weight: 600;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.sidebar h5 {
+  margin-left: 24px;
+}
+
+/* Sidebar Items - Each Row */
+.items {
+  margin-left: 36px;
+  padding: 12px 16px; /* Ensures full row is clickable */
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Sidebar Links */
+.items a {
+  text-decoration: none;
+  color: #f8f9fa; /* Light text color */
+  display: block;
+  font-weight: 500;
+  width: 100%;
+}
+
+/* ✅ Full Row Highlight on Hover */
+.items:hover {
+  background-color: #f1c40f; /* Gold highlight */
+  color: #333; /* Dark text for contrast */
+  cursor: pointer;
+}
+
+/* Ensure link text changes when hovering over .items */
+.items:hover a {
+  color: #333;
+}
+
+
+/* ✅ Content Section (Improved) */
+.content {
+  flex-grow: 1; /* Expands to fill available space */
+  padding: 40px;
+  background: white;
+}
+
+.content h2 {
+  font-weight: 700;
+  color: #333;
+}
+
+.content p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.content ul {
+  padding-left: 20px;
+}
+
+.content ul li {
+  margin: 5px 0;
+  font-size: 1.1rem;
+  color: #007bff;
+}
+
+/* Tech Archive Content */
+.tech-content {
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.tech-content h2 {
+  font-weight: 700;
+  color: #333;
+}
+
+.tech-content p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Contact Page */
+.contact-container {
+  max-width: 900px;
+  margin-top: 20px;
+  padding: 40px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.contact-form .form-control {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: 0.3s ease-in-out;
+}
+
+.contact-form .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.3);
+}
+
+.contact-form .btn-primary {
+  background-color: #007bff;
+  border: none;
+  font-weight: 500;
+}
+
+.contact-form .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* AWS Page */
+.aws-container {
+  max-width: 900px;
+  margin-top: 10px;
+  padding: 30px;
+  background: white;
+}
+
+/* Centered Image */
+.aws-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* PDF iFrame Styling */
+.pdf-container {
+  width: 100%;
+  height: 100vh;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pdf-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 8px;
+}

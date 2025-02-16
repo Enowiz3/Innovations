@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css"; // Ensure Bootstrap is applied
 import profileImg from "../assets/images/Enoch.jpg"; // Import your profile image
-import resume from "../assets/resume.pdf"; // Import your resume file
+import resume from "../assets/pdfs/resume.pdf"; // Import your resume file
 const Home = () => {
   return (
     <div className="container">

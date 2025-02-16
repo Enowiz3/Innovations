@@ -15,12 +15,12 @@ const Contact = () => {
 
           <ul className="list-unstyled">
             <li>
-              <FaPhone className="contact-icon" /> 
-              <a href="tel:+1234567890"> +1 (234) 567-890</a>
+              <FaPhone className="contact-icon" /> &nbsp;:
+              <strong> (818) 921-5206</strong>
             </li>
             <li>
-              <FaEnvelope className="contact-icon" /> 
-              <a href="mailto:enoch@example.com"> enoch@example.com</a>
+              <FaEnvelope className="contact-icon" /> &nbsp;:&nbsp;
+              <a href="mailto:enochpark89@gmail.com">enochpark89@gmail.com</a>
             </li>
           </ul>
 

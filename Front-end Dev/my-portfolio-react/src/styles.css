@@ -18,7 +18,22 @@ h1, h2, h3, h4 {
 p, a, ul, li {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  line-height: 1.6;
+  
+}
+
+
+/* Increase Default Font Size for Paragraphs, lists, and links */
+p  {
+  font-size: 24px !important;
+  line-height: 1.8;
+}
+
+ul, li {
+  font-size: 20px !important;
+}
+
+a {
+  font-size: 18px !important;
 }
 
 /* Main Layout */
@@ -46,7 +61,15 @@ p, a, ul, li {
 .sidebar h4, .sidebar h5 {
   font-weight: 600;
   color: white;
-  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.sidebar h4 {
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 12px;
+
 }
 
 .sidebar h5 {
@@ -56,6 +79,7 @@ p, a, ul, li {
 /* Sidebar Items - Each Row */
 .items {
   margin-left: 36px;
+  margin-bottom: 3px;
   padding: 12px 16px; /* Ensures full row is clickable */
   border-radius: 10px;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -200,4 +224,32 @@ p, a, ul, li {
   height: 100%;
   border: none;
   border-radius: 8px;
+}
+
+/* Image styling */
+
+.circular-image {
+  width: 150px; /* Adjust size as needed */
+  height: 150px; /* Make sure it's a square */
+  border-radius: 12%; /* Makes it a circle */
+  object-fit: cover; /* Ensures the image fills the space */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+/* Footer Styling */
+.footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #2C3E50; /* Dark blue (adjust as needed) */
+  color: white;
+  font-size: 16px;
+  margin-top: 3px;
+}
+
+.footer p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 }
